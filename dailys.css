@@ -1,0 +1,277 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+
+body{
+	background: #d3d1e0;
+	overflow-x: hidden;
+	padding: 70px 100px;
+}
+
+.first-links{
+	width: 100%;
+	background: white;
+	padding: 15px 30px;
+	margin-bottom: 0;
+}
+
+li{
+	display: inline-block;
+	padding: 10px;
+	padding-left: 0;
+}
+
+.over{
+	display: flex;
+	justify-content: space-between;
+}
+
+a{
+	color: black;
+}
+
+button{
+	padding: 5px 10px;
+	border-radius: 20px;
+	margin-left: 10px;
+}
+
+button.login{
+	background: white;
+	border: 0.5px solid #34384d;
+}
+
+button.start{
+	background: #34384d;
+	border: none;
+}
+
+button.start a{
+	color: white;
+}
+
+button.login a{
+	color: #34384d;
+}
+
+hr{		
+		margin-top: 10px;
+		border: 1px solid #d3d1e0;
+}
+.second-links{
+	width: 100%;
+}
+
+.second-links ul li{
+	display: inline-block;
+	padding: 10px;
+	padding-left: 0;
+}
+
+#check{
+	display: none;
+}
+
+#ham-bar {
+        width: 25px;
+        height: 30px;
+        cursor: pointer;
+        display: none;
+}
+
+.bar {
+        height: 5px;
+        width: 100%;
+        background: #34384d;
+        border-radius: 5px;
+}
+
+#bar1 {
+        transform: translateY(-4px);
+}
+
+#bar3 {
+        transform: translateY(4px);
+}
+
+.main-content{
+	background: white;
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 20px;
+}
+
+.images{
+	width: 90%;
+	/*border: 2px solid green;*/
+}
+
+.ave{
+	width: 100%;
+	display: block;
+	border-radius: 3px;
+}
+
+h1{
+	font-weight: 700;
+	font-size: 40px;
+}
+h2{
+	font-size: 30px;
+}
+
+h2, h6, h3{
+	margin: 10px 0;
+}
+h6, h5{
+	font-weight: 100;
+}
+
+h3{
+	font-size: 25px;
+}
+
+.girlone{
+	border-radius: 50%;
+}
+
+.girl{
+	margin-top: 20px;
+}
+
+.girl h5{
+	display: inline-block;
+	transform: translateY(-20px);
+}
+
+.skyscrapper{
+	width: 150px;
+	height: 150px;
+	/*border: 1px solid green;*/
+}
+.sky{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.common img{
+	margin-bottom: 10px;
+}
+
+.common{
+	display: flex;
+}
+
+#girl{
+	margin-left: 20px;
+	transform: translateY(-22px);
+}
+
+.main{
+	/*flex: 1;*/
+}
+
+.sub-main{
+	transform: translateY(25px);
+}
+
+@media screen and (max-width: 850px){
+	.first-links{
+	display: block;
+	}
+
+	li{
+		display: block;
+	}
+
+	button{
+		display: block;
+		margin: 0 0 15px 0;
+	}
+
+	.second-links ul li{
+	display: block;
+	}
+
+	.main-content{
+	display: block;
+	}
+
+	.sub-main{
+	transform: translateY(0);
+	}
+
+	#ham-bar {
+        display: block;
+        position: fixed;
+        transform: translateX(-10px);
+	}
+	.over{
+		display: block;
+	}
+
+	ul{
+		position: fixed;
+		width: 200px;
+		min-height: 100px;
+		background: #34384d;
+		top: 20px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+		margin-top: 15px;
+		border-radius: 5px;
+	}
+
+	#check:checked ~ ul{
+		left: 0%;
+	}
+	button{
+		margin: auto;
+		margin-bottom: 20px;
+	}
+
+	body{
+		padding: 0px 0px;
+	}
+
+	.images{
+		width: 100%;
+	}
+	h1{
+		font-size: 30px;
+	}
+
+	h2{
+		font-size: 20px;
+	}
+
+	h3{
+		font-size: 15px;
+	}
+
+	#girl{
+	transform: translateY(-15px);
+	}
+
+	.first-links{
+		border-bottom: none;
+	}
+
+	hr{
+		width: 50%;
+		margin: auto;
+	}
+	button.login{
+	background: #34384d;
+	border: none;
+	}
+	button.login a{
+		color: white;
+	}
+}
